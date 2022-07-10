@@ -1,0 +1,112 @@
+.footer__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include tablet{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    @include desktop{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.logo__link{
+    display: block;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.23;
+    
+    letter-spacing: 0.04em;
+
+    color: #111518;
+    @include tablet{
+        font-size: 26px;
+    }
+}
+
+
+.contact__link{
+    @extend %link;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+
+    color: $text-color-dark;
+    @include tablet{
+        &::after{
+        content: "";
+        margin: 0 24px;
+        width: 1px;
+        height: 40px;
+        background-color: #B9B9B9;
+        }
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+
+        font-size: 20px;
+    }
+    @include desktop{
+        font-size: 30px;
+        margin-left: 452px;
+    }
+}
+
+
+.contact__icon{
+    margin-right: 8px;
+    @include tablet{
+        width: 24px;
+        height: 23px;
+    }
+    @include tablet{
+        width: 30px;
+        height: 29px;
+    }
+}
+
+.footer__icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-image: url(../images/instagram-desktop-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/instagram-desktop@2x-min.jpg);
+    }
+}
+
+.rights{
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 2;
+
+    background-color: $bg-color-dark;
+    
+}

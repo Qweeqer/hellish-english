@@ -1,0 +1,410 @@
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.program {
+    margin: 0 auto;
+
+
+    @media screen and (max-width: 1679px) {
+        padding-top: 60px;
+        padding-bottom: 184px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-top: 40px;
+        margin: 0;
+    
+    
+    }
+    @include desktop {
+        padding-top: 80px;
+        padding-bottom: 288px;
+    }
+
+    background-color: $text-color-dark;
+}
+
+.section-title {
+    color: $text-color-white;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 40px;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 1.30;
+        letter-spacing: 0.03em;
+    }
+
+    @media screen and (max-width: 1679px) {
+        margin: 0;
+        margin-bottom: 40px;
+        padding-left: 32px;
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 1.30;
+        letter-spacing: 0.03em;
+    }
+
+    @include desktop {
+        margin: 0;
+        margin-bottom: 88px;
+        padding-left: 16px;
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 1.30;
+        letter-spacing: 0.03em;
+    }
+}
+
+.semestr-list__title {
+        color: $text-color-white;
+    @include desktop {
+        margin-top: 40px;
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 2.0;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 1679px) {
+        padding-left: 113px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 2.0;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 767px) {
+        // margin-top: 6px;
+        padding-left: 12px;
+        margin-bottom: 4px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 2.0;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+}
+
+.program-list {
+    @include desktop {
+        position: relative;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        padding-left: 156px;
+        padding-right: 164px;
+        margin-bottom: 127px;
+    }
+
+    @media screen and (max-width: 1679px) {
+        position: relative;
+        padding: 0;
+        margin-left: 62px;
+        padding-bottom: 120px;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 450px;
+    }  
+}
+
+
+.program-list__item {
+    
+    @include desktop {
+        width: 240px;
+    }
+
+    @media screen and (max-width: 1679px) {
+        position: relative;
+        margin: 0;
+        }
+
+    @media screen and (max-width: 767px) {
+        margin: 0;
+        padding: 0;
+        padding-top: -10px;
+        padding-left: 26px;
+
+
+    }
+}
+
+.program-list::before {
+    background-color: $text-color-white;
+
+    @include desktop {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+    }
+}
+
+.program-list__item::before {
+
+    @include desktop {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: $accent-color;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        transform: translate(0, -8px);
+    }
+
+    @media screen and (max-width: 1679px) {
+        position: absolute;
+        left: 9px;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: $accent-color;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        transform: translate(-17px, -8px);
+    }
+
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        left: 0;
+        content: "";
+        width: 12px;
+        height: 12px;
+        background: $accent-color;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        transform: translate(-6px, -8px);
+
+    }
+
+}
+
+.program-list__item:not(:last-child) {
+
+    @include desktop {
+        margin-right: 40px;
+
+    }
+
+    @media screen and (max-width: 1679px) {
+        margin: 0;
+        padding-bottom: 40px;
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: $text-color-white;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin: 0;
+        padding-bottom: 40px;
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: $text-color-white;
+    }
+}
+
+.semestr-list {
+
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 1679px) {
+        display: flex;
+        margin-top: 4px;
+        padding: 0;
+        padding-left: 113px;
+    }
+
+
+    @media screen and (max-width: 767px) {
+
+        flex-direction: column;
+        margin-top: 4px;
+        margin-left: -15px;
+        padding-left: 26px;
+    }
+}
+
+
+.semestr-list__item:not(:last-child) {
+
+    @media screen and (max-width: 1679px) {
+        width: 152px;
+        margin-right: 32px;
+    }
+}
+
+.grammar,
+.vocabulary,
+.writing {
+    color: $accent-color;
+
+    @include desktop {
+        display: block;
+        margin-top: 24px;
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.65;
+        letter-spacing: 0.08em;
+    }
+
+    @media screen and (max-width: 1679px) {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.67;
+        letter-spacing: 0.08em;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.65;
+        letter-spacing: 0.08em;
+    }
+
+}
+.grammar::before,
+.vocabulary::before,
+.writing::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 2px;
+    margin-right: 5px;
+    background-color: $accent-color;
+
+}
+
+.grammar-list__item,
+.vocabulary-list__item,
+.writing-list__item {
+    color: $text-color-lightgrey;
+
+    @media screen and (max-width: 1679px) {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.67;
+        letter-spacing: 0.08em;
+    }
+
+    @include desktop {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.08em;
+
+    }
+}
+
+.semestr-list__numbers {
+    @include desktop {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 0.93;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 1679px) {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 2.0;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+}
+
+.program-list::after {
+    opacity: 0.5;
+
+    @media screen and (max-width: 1679px) {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: -10px;
+        width: 368px;
+        height: 268px;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        background-image:
+            url('../images/programm-tablet.png');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url("../images/programm-tablet@2x.png");
+        }
+    }
+    @include desktop {
+        position: absolute;
+        content: '';
+        width: 684px;
+        height: 381px;
+        bottom: -57px;
+        left: 0;  
+        transform: translateY(207px);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+         background-image:
+            url("../images/programm-desktop.png");
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url("../images/programm-desktop@2x.png");
+        
+        }
+    }
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: -35px;
+        width: 150px;
+        height: 137px;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    background-image:
+        url('../images/programm-mobile.png');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url('../images/programm-mobile@2x.png');
+        } 
+    }   
+}

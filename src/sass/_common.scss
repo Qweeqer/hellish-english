@@ -1,0 +1,33 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.08em;
+    color: #B9B9B9;
+    background-color: #ffffff;
+}
+.no-scroll{
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        @include mobile{
+            width: 480px;
+        }
+        @include tablet{
+            padding-left: 32px;
+            padding-right: 32px;
+            width: 768px;
+        }
+        @include desktop{
+            padding-left: 16px;
+            padding-right: 16px;
+            width: 1680px;
+        }
+
+}

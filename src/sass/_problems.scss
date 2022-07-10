@@ -1,0 +1,191 @@
+
+
+// <----Варіант-2-->
+.problems {
+        position: relative;
+        counter-reset: number;
+        background-image: linear-gradient(to bottom, #111517 60%, #ffffff 40%);
+        
+        overflow: hidden;
+        @include desktop{
+            z-index: 1;
+        }
+        &__icon {
+                display: none;
+            }
+
+        &__title{
+            padding: 24px 0px;
+                
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 1.3;
+                letter-spacing: 0.03em;
+                color: $text-color-white;
+                @include tablet {
+                        padding: 40px 0px 25px 0px;
+                        
+                    }
+                
+                @include desktop {
+                        padding-top: 80px;
+                        padding-bottom: 80px;                                    
+                        font-size: 46px;
+                    }
+        }
+
+        &__list {
+            padding-top: 40px;
+            padding-left: 30px;
+            padding-bottom: 40px;
+            list-style-position: outside;
+            background-color: $text-color-white;
+            box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+            list-style: none;
+        }
+
+        &__text {
+                margin-bottom: 40px;
+                padding-top: 20px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.71;
+                position: relative;
+                letter-spacing: 0.08em;
+                color: $text-color-dark;
+                @include tablet{                
+                    font-size: 14px;
+                    line-height: 1.43;                
+                    }
+                @include desktop {
+                        font-size: 20px;
+                        line-height: 1.4;
+                    }
+
+            }
+
+            &__item:last-child {
+                margin-bottom: 0px;
+            }
+        
+    
+
+    &__title-accent {
+            color: $accent-color;
+        
+    }
+}
+
+.problems__text::before {
+    position: absolute;
+    counter-increment: number;
+    content: counter(number, decimal-leading-zero) '';
+    color: #ff6b08;
+    left: 50px;
+    top: -14px;
+}
+
+.problems__text:after {
+    display: block;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: $accent-color;
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    @include tablet {
+            top: -5px;
+        }
+    @include desktop{
+        top: -2px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .problems {
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 95px;
+                padding-right: 95px;
+                padding-top: 55px;}
+
+            &__item {
+                    flex-basis: calc(100% / 2 - 20px);
+                    margin-right: 20px;
+                }
+
+                &__item:nth-last-child(-n + 2) {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    
+
+
+@media screen and (min-width: 1440px) {
+    .problems {
+        &__icon {
+                display: block;
+                position: absolute;
+                right: 1px;
+                bottom: 40%;
+                width: 255px;
+                height: 272px;
+                fill: $text-color-grey;
+                
+            }
+            &__title {
+                width: 866px;
+            }
+
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 65px 112px;
+                justify-content: space-between;}
+
+            &__item {
+                    font-weight: 700;
+                    font-size: 20px;
+                    flex-basis: calc(100% / 2 - 30px);
+                }
+
+            &__text::before {
+                    top: -14px;
+                }
+
+            &__item:nth-child(n + 3) {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+@include desktop {
+    .problems {
+        &__item {
+                flex-basis: calc(100% / 3 - 30px);
+            }
+        &__icon {
+                z-index: -1;
+        }
+    }
+}
+.problems__icon {
+                    animation: fire 3s $timimg-function infinite;
+                }
+        
+@keyframes fire {
+                    0% {
+                        fill: $text-color-grey;
+                    }
+        
+                    50% {
+                        fill: $accent-color;
+                    }
+        
+                    100% {
+                        fill: $text-color-grey;
+                    }
+                }

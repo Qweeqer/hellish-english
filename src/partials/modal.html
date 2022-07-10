@@ -1,0 +1,71 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="btn-modal--close" data-modal-close>
+      <svg class="icon" width="18" height="18">
+        <use href="./images/icons.svg#icon-menucross"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Leave you contacts we will call you back</p>
+    <form class="modal__form">
+      <div class="modal__field">
+        <label for="user-name" class="modal__label">Name</label>
+        <div class="input-wrap">
+          <input
+            type="text"
+            class="modal__input"
+            name="user-name"
+            id="user-name"
+            required
+            minlength="3"
+          />
+          <svg class="modal__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-person-black"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal__field">
+        <label for="user-tel" class="modal__label">Phone</label>
+        <div class="input-wrap">
+          <input
+            type="tel"
+            class="modal__input"
+            name="user-tel"
+            id="user-tel"
+            required
+            minlength="10"
+            pattern="\+?[0-9\s\-\(\)]+"
+          />
+          <svg class="modal__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone-black"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal__field">
+        <label for="user-email" class="modal__label">Email</label>
+        <div class="input-wrap">
+          <input
+            type="email"
+            class="modal__input"
+            name="user-email"
+            id="user-email"
+          />
+          <svg class="modal__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-email-black"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal__field">
+        <label for="user-comment" class="modal__label">Comment</label>
+        <br />
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          class="modal__comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn--send">Send</button>
+    </form>
+  </div>
+</div>
