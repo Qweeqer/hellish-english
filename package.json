@@ -1,15 +1,15 @@
 {
-  "name": "parcel-project-template",
+  "name": "hellish-english",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Oleksandr26.github.io/hellen-project",
+  "homepage": "https://qweeqer.github.io/hellish-english",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /hellen-project/"
+    "build": "parcel build src/*.html --public-url /hellish-english/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/qweeqer/hellish-english.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
